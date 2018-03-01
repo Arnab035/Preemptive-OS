@@ -14,13 +14,11 @@
 
 6. Supports - ls, cat, echo, sleep, kill, ps.
 
-7. Since there is no support for cd, ls will display files from the current working directory which is /bin/ always.
+7. Since there is no support for cd, ls will display files from the current working directory which is the root directory always.
 
-8. cat file.txt will open a file placed again in the current working directory which is /bin/
+9. sleep will perform timeouts for values expressed in seconds
 
-9. sleep will perform timeouts for values expressed in milliseconds ( not seconds )
-
-10. ps, contrary to normal use, will display all processes even the killed ones.
+10. ps, will display only currently active processes, and the zombie ones.
 
 11. Future plans include -- supporting on-disk RW file system and handling signals, along with syscall support for important binaries like cd.
 
