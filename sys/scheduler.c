@@ -208,7 +208,7 @@ struct pcb *get_current_process()
 
 
 /* this is the implementation of sleep_2 system call- assign a different number to it */
-int sys_sleep(unsigned long seconds)
+int sys_sleep_process(unsigned long seconds)
 {
   if(seconds < 1)
   {
