@@ -84,7 +84,7 @@ void set_default_interrupts()
   set_int_vect(30, default_handler);
   set_int_vect(31, default_handler);*/
   int i;
-  for(i = 20; i <= 255; i++){
+  for(i = 0; i <= 255; i++){
     set_int_vect(i, default_handler);
   }
 
