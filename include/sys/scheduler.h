@@ -44,7 +44,7 @@ void try_to_wake_up(struct queue_type *, struct pcb *);
 
 void do_switch(struct pcb *prev, struct pcb *next);
 
-int sys_sleep(unsigned long );
+int sys_sleep_process(unsigned long );
 
 void schedule();
 
