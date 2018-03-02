@@ -69,6 +69,17 @@ void i86_pit_wrapper(){
   );  
 }
 
+void sys_sleep(unsigned long seconds)
+{
+  unsigned int timer_ticks;
+  timer_ticks = ticks + (seconds * 1000);
+  /*
+  kprintf("sleeping for %d seconds ", seconds);*/
+  while(ticks < timer_ticks);
+  kprintf("sleep done\n");
+}
+
+
 void i86_pit_irq(){
   i86_set_mask(1);
 
