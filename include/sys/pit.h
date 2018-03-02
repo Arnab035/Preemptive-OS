@@ -28,4 +28,4 @@ uint16_t i86_pit_read_data(uint8_t );
 
 uint64_t get_number_of_ticks_since_boot();
 
-//void sys_sleep(unsigned long );
+void sys_sleep(unsigned long );
